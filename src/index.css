@@ -56,14 +56,14 @@ body {
 }
 
 .todoitem > input:checked {
-  background-color: #41B883;
+  background-color: #3C6;
 }
 
 .todoitem > input:checked + span::before {
   content: '\251B';
   text-align: center;
   position: absolute;
-  color: #444;
+  color: #666;
   top: 16px;
   left: 17px;
   -webkit-transform: rotate(45deg);
