@@ -5,14 +5,14 @@ const TodoItem = ( { item, handleChange} ) => {
     const {completed, test} = item;
 
     return(
-        <div className="todoitem">
+        <label className="todoitem">
             <input 
                 type="checkbox" 
                 checked={completed} 
                 onChange={() => handleChange(item.id)}
             />
             <span>{test}</span> 
-        </div>
+        </label>
     );
 }
 

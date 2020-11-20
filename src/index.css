@@ -24,23 +24,21 @@ body {
 }
 
 .todoitem {
-  display: block;
+  display: flex;
   position: relative;
-  padding-bottom: 5px ;
-  margin: 10px;
+  padding: 10px;
+  margin: 0 10px;
   border-bottom: 1px solid #ddd;
 }
 
 .todoitem > span {
   color:#34495E;
-  margin-bottom: 20px;  
-  position: absolute;
-  top: 5px;
-  font-size: 1.2em;
-  margin-left: 10px;
+  margin: auto 0 auto 10px; 
 }
 
-.todoitem > input {
+ .todoitem > input {
+  margin: 0;
+  padding: 0;
   height: 25px;
   width: 25px;
   -webkit-appearance: none;
@@ -63,14 +61,14 @@ body {
 .todoitem > input:checked + span::before {
   content: '\251B';
   text-align: center;
-  color: #444;
   position: absolute;
-  left: -32px;
-  top: 2px;
+  color: #444;
+  top: 16px;
+  left: 17px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
+} 
 
 .todoitem:last-of-type {
   border: none;
